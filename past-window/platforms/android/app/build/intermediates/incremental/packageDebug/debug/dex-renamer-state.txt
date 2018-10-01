@@ -1,0 +1,4 @@
+#Mon Oct 01 23:42:24 EEST 2018
+base.0=/Users/p3700836/Desktop/PastWindowProject/PastWindow/past-window/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/p3700836/Desktop/PastWindowProject/PastWindow/past-window/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

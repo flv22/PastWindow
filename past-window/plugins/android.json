@@ -9,6 +9,12 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.dacosoft.pastwindow"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.dacosoft.pastwindow"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.dacosoft.pastwindow"
     }
   },
   "dependent_plugins": {}

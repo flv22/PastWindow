@@ -28,8 +28,29 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
-    },
 
+            var onSuccess = function(position) {
+                document.getElementById("position").innerHTML = position.coords.latitude + " - " + position.coords.longitude;
+                // alert('Latitude: '          + position.coords.latitude          + '\n' +
+                //       'Longitude: '         + position.coords.longitude         + '\n' +
+                //       'Altitude: '          + position.coords.altitude          + '\n' +
+                //       'Accuracy: '          + position.coords.accuracy          + '\n' +
+                //       'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+                //       'Heading: '           + position.coords.heading           + '\n' +
+                //       'Speed: '             + position.coords.speed             + '\n' +
+                //       'Timestamp: '         + position.timestamp                + '\n');
+            };
+
+            function onError(error) {
+                alert('code: '    + error.code    + '\n' +
+                      'message: ' + error.message + '\n');
+            }
+
+            setInterval(function(){
+                navigator.geolocation.getCurrentPosition(onSuccess, onError, { enableHighAccuracy: true });
+            }, 3000);
+    },
+    
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
