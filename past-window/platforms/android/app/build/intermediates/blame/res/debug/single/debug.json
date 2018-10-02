@@ -8,6 +8,10 @@
         "source": "/Users/p3700836/Desktop/PastWindowProject/PastWindow/past-window/platforms/android/app/src/main/res/drawable-port-xxhdpi/screen.png"
     },
     {
+        "merged": "/Users/p3700836/Desktop/PastWindowProject/PastWindow/past-window/platforms/android/app/build/intermediates/res/merged/debug/xml_camera_provider_paths.xml.flat",
+        "source": "/Users/p3700836/Desktop/PastWindowProject/PastWindow/past-window/platforms/android/app/src/main/res/xml/camera_provider_paths.xml"
+    },
+    {
         "merged": "/Users/p3700836/Desktop/PastWindowProject/PastWindow/past-window/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-xxxhdpi_screen.png.flat",
         "source": "/Users/p3700836/Desktop/PastWindowProject/PastWindow/past-window/platforms/android/app/src/main/res/drawable-land-xxxhdpi/screen.png"
     },
