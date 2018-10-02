@@ -49,6 +49,22 @@ var app = {
             setInterval(function(){
                 navigator.geolocation.getCurrentPosition(onSuccess, onError, { enableHighAccuracy: true });
             }, 3000);
+            document.getElementById("openCamera").addEventListener ("click", openCamera); 
+
+            function onCameraSuccess() {
+                console.log("Camera cleanup success.")
+            }
+            
+            function onCameraFail(message) {
+                alert('Failed because: ' + message);
+            }
+
+            function openCamera() {
+                navigator.camera.getPicture(onCameraSuccess, onCameraFail, {  
+                    quality: 50, 
+                    destinationType: Camera.DestinationType.DATA_URL 
+                });
+            }
     },
     
     // Update DOM on a Received Event

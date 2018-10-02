@@ -23,7 +23,10 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
+        <string>need camera access to take pictures</string>
+    </edit-config>
     <plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
-    <engine name="android" spec="^7.0.0" />
     <plugin name="cordova-plugin-camera" spec="^4.0.3" />
+    <engine name="android" spec="^7.0.0" />
 </widget>
